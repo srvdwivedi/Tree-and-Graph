@@ -1,36 +1,3 @@
-
-# coding: utf-8
-
-# In[10]:
-
-
-class BinaryTree:
-    
-    def Node(self,Root):
-        self.Root = Root
-        self.LeftChild = None
-        self.RightChild = None
-    
-    def LeftInsert(self,newNode):
-        if self.LeftChild == None:
-            self.LeftChild = BinaryTree(newNode)
-        else:
-            t = BinaryTree(newNode)
-            t.LeftChild = self.LeftChild
-            t = BinaryTree(newNode)
-            
-    def LeftInsert(self,newNode):
-        if self.LeftChild == None:
-            self.LeftChild = BinaryTree(newNode)
-        else:
-            t = BinaryTree(newNode)
-            t.LeftChild = self.LeftChild
-            t = BinaryTree(newNode)
-
-
-# In[1]:
-
-
 class BinaryTree():
     
     def __init__ (self,root):
